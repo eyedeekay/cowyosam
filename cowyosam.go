@@ -38,7 +38,7 @@ type CowYoSam struct {
 var err error
 
 func (f *CowYoSam) GetType() string {
-	return "eephttpd"
+	return "cowyosam"
 }
 
 func (f *CowYoSam) ServeParent() {
