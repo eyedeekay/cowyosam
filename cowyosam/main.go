@@ -25,7 +25,7 @@ var cfg = &tls.Config{
 
 var (
 	host               = flag.String("a", "127.0.0.1", "hostname to serve on")
-	port               = flag.String("p", "7880", "port to serve locally on")
+	port               = flag.String("p", "7879", "port to serve locally on")
 	samhost            = flag.String("sh", "127.0.0.1", "sam host to connect to")
 	samport            = flag.String("sp", "7656", "sam port to connect to")
 	directory          = flag.String("d", "./www", "the directory of static files to host(default ./www)")
@@ -64,7 +64,7 @@ func main() {
 		}
 	}
 	config.TargetHost = config.GetHost(*host, "127.0.0.1")
-	config.TargetPort = config.GetPort(*port, "7880")
+	config.TargetPort = config.GetPort(*port, "7879")
 	config.SaveFile = config.GetSaveFile(*usei2p, true)
 	config.SamHost = config.GetSAMHost(*samhost, "127.0.0.1")
 	config.SamPort = config.GetSAMPort(*samport, "7656")
